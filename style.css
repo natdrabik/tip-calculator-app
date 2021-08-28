@@ -1,0 +1,22 @@
+body, html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #272727;
+    background: hsl(185, 41%, 84%);
+}
+.wrapper {
+    max-width: 1190px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+@media (min-width:992px) {
+
+}
