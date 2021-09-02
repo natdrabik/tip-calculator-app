@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body, html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Space Mono', monospace;
     color: #272727;
     background: hsl(185, 41%, 84%);
 }
@@ -21,6 +23,32 @@ article {
     background: #fff;
     border-radius: 20px 20px 0 0;
     padding: 40px;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+}
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+.form__group--2 {
+    grid-column: span 2;
+}
+.total {
+    background: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background: hsl(172, 67%, 45%);
+    border-radius: 5px;
+    border: 0;
 }
 @media (min-width:992px) {
 
