@@ -40,6 +40,7 @@ input {
     border: 0;
     background: hsl(189, 41%, 97%);
     height: 45px;
+    margin-bottom: 20px;
 }
 input[type=radio] {
     display: none;
@@ -51,6 +52,7 @@ input[type=radio] + label {
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 0;
 }
 input[type=radio]:checked + label {
     background: hsl(172, 67%, 45%);
