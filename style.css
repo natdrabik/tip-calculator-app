@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body, html {
-    font-size: 10px;
+    font-size: 15px;
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Space Mono', monospace;
-    color: #272727;
+    color: hsl(183, 100%, 15%);
     background: hsl(185, 41%, 84%);
 }
 header {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 45px;
 }
 article {
     width: 100%;
     background: #fff;
     border-radius: 20px 20px 0 0;
-    padding: 40px;
+    padding: 30px;
 }
 form {
     display: grid;
@@ -35,6 +35,30 @@ form {
 }
 .form__group--2 {
     grid-column: span 2;
+}
+input {
+    border: 0;
+    background: hsl(189, 41%, 97%);
+    height: 45px;
+}
+input[type=radio] {
+    display: none;
+}
+input[type=radio] + label {
+    background: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+input[type=radio]:checked + label {
+    background: hsl(172, 67%, 45%);
+
+}
+label {
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 .total {
     background: hsl(183, 100%, 15%);
@@ -49,6 +73,7 @@ button {
     background: hsl(172, 67%, 45%);
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
 }
 @media (min-width:992px) {
 
