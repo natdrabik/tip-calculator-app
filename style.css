@@ -66,6 +66,16 @@ label {
     margin-bottom: 10px;
     color: hsl(175deg 13% 35%); /*?*/
 }
+.input__bill {
+    background: url(images/icon-dollar.svg) no-repeat 10px center;
+    padding-left: 30px;
+    text-align: right;
+}
+.input__people {
+    background: url(images/icon-person.svg) no-repeat 10px center;
+    padding-left: 30px;
+    text-align: right;
+}
 .input__custom {
     color: hsl(175deg 13% 35%); /*?*/
     text-align: right;
